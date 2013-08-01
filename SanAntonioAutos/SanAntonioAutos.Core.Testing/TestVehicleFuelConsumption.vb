@@ -59,5 +59,115 @@ Public Class TestVehicleFuelConsumption
         Assert.AreEqual(False, (testObject1 = testObject3))
     End Sub
 #End Region
+
+#Region "Property Tests"
+#Region "MPG Imperial To Other Unit"
+    <Test()>
+    Public Sub TestMPGImperialToMPGImperialConversion()
+        Dim testObject As New VehicleFuelConsumption(15.7D, 21.3D, VehicleFuelConsumptionUnit.MilesPerGallon_ImperialGallons)
+        testObject.ConsumptionUnit = VehicleFuelConsumptionUnit.MilesPerGallon_ImperialGallons
+
+        Assert.AreEqual(15.7D, testObject.CityRating)
+        Assert.AreEqual(21.3D, testObject.HighwayRating)
+        Assert.AreEqual(VehicleFuelConsumptionUnit.MilesPerGallon_ImperialGallons, testObject.ConsumptionUnit)
+    End Sub
+
+    <Test()>
+    Public Sub TestMPGImperialToMPGUSConversion()
+        Dim testObject As New VehicleFuelConsumption(15.7D, 21.3D, VehicleFuelConsumptionUnit.MilesPerGallon_ImperialGallons)
+        testObject.ConsumptionUnit = VehicleFuelConsumptionUnit.MilesPerGallon_USGallons
+
+        Assert.AreEqual(13.07D, testObject.CityRating)
+        Assert.AreEqual(17.74D, testObject.HighwayRating)
+        Assert.AreEqual(VehicleFuelConsumptionUnit.MilesPerGallon_USGallons, testObject.ConsumptionUnit)
+    End Sub
+
+    <Test(), Ignore("Not implemented")>
+    Public Sub TestMPGImperialToKmPerLiterConversion()
+
+    End Sub
+
+    <Test(), Ignore("Not implemented")>
+    Public Sub TestMPGImperialToLitersPer100KmConversion()
+
+    End Sub
+#End Region
+
+#Region "MPG US To Other Unit"
+    <Test()>
+    Public Sub TestMPGUSToMPGImperialConversion()
+        Dim testObject As New VehicleFuelConsumption(18.4D, 23D, VehicleFuelConsumptionUnit.MilesPerGallon_USGallons)
+        testObject.ConsumptionUnit = VehicleFuelConsumptionUnit.MilesPerGallon_ImperialGallons
+
+        Assert.AreEqual(22.10D, testObject.CityRating)
+        Assert.AreEqual(27.62D, testObject.HighwayRating)
+        Assert.AreEqual(VehicleFuelConsumptionUnit.MilesPerGallon_ImperialGallons, testObject.ConsumptionUnit)
+    End Sub
+
+    <Test()>
+    Public Sub TestMPGUSToMPGUSConversion()
+        Dim testObject As New VehicleFuelConsumption(18.4D, 23D, VehicleFuelConsumptionUnit.MilesPerGallon_USGallons)
+        testObject.ConsumptionUnit = VehicleFuelConsumptionUnit.MilesPerGallon_USGallons
+
+        Assert.AreEqual(18.4D, testObject.CityRating)
+        Assert.AreEqual(23D, testObject.HighwayRating)
+        Assert.AreEqual(VehicleFuelConsumptionUnit.MilesPerGallon_USGallons, testObject.ConsumptionUnit)
+    End Sub
+
+    <Test(), Ignore("Not implemented")>
+    Public Sub TestMPGUSToKmPerLiterConversion()
+
+    End Sub
+
+    <Test(), Ignore("Not implemented")>
+    Public Sub TestMPGUSToLitersPer100KmConversion()
+
+    End Sub
+#End Region
+
+#Region "Km/L To Other Unit"
+    <Test(), Ignore("Not implemented")>
+    Public Sub TestKmPerLiterToMPGImperialConversion()
+
+    End Sub
+
+    <Test(), Ignore("Not implemented")>
+    Public Sub TestKmPerLiterToMPGUSConversion()
+
+    End Sub
+
+    <Test(), Ignore("Not implemented")>
+    Public Sub TestKmPerLiterToKmPerLiterConversion()
+
+    End Sub
+
+    <Test(), Ignore("Not implemented")>
+    Public Sub TestKmPerLiterToLitersPer100KmConversion()
+
+    End Sub
+#End Region
+
+#Region "L/100Km To Other Unit"
+    <Test(), Ignore("Not implemented")>
+    Public Sub TestLitersPer100KmToMPGImperialConversion()
+
+    End Sub
+
+    <Test(), Ignore("Not implemented")>
+    Public Sub TestLitersPer100KmToMPGUSConversion()
+
+    End Sub
+
+    <Test(), Ignore("Not implemented")>
+    Public Sub TestLitersPer100KmToKmPerLiterConversion()
+
+    End Sub
+
+    <Test(), Ignore("Not implemented")>
+    Public Sub TestLitersPer100KmToLitersPer100KmConversion()
+
+    End Sub
+#End Region
+#End Region
 #End Region
 End Class

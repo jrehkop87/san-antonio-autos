@@ -1,0 +1,15 @@
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\bin\Debug\SanAntonioAutos.Core.Testing.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\bin\Debug\SanAntonioAutos.Core.Testing.pdb
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\bin\Debug\SanAntonioAutos.Core.Testing.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\bin\Debug\nunit.framework.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\bin\Debug\SanAntonioAutos.Core.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\bin\Debug\SanAntonioAutos.Core.pdb
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\bin\Debug\SanAntonioAutos.Core.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\bin\Debug\nunit.framework.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\obj\Debug\SAAutos.Core.Testing.Resources.resources
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\obj\Debug\SanAntonioAutos.Core.Testing.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\obj\Debug\SanAntonioAutos.Core.Testing.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.Testing\obj\Debug\SanAntonioAutos.Core.Testing.pdb

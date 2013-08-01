@@ -1,0 +1,10 @@
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core\bin\Debug\SanAntonioAutos.Core.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core\bin\Debug\SanAntonioAutos.Core.pdb
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core\bin\Debug\SanAntonioAutos.Core.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core\obj\Debug\SAAutos.Core.Resources.resources
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core\obj\Debug\SanAntonioAutos.Core.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core\obj\Debug\SanAntonioAutos.Core.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core\obj\Debug\SanAntonioAutos.Core.pdb

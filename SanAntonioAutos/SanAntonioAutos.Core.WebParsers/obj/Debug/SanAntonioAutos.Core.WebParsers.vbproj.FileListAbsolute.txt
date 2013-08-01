@@ -1,0 +1,16 @@
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\bin\Debug\SanAntonioAutos.Core.WebParsers.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\bin\Debug\SanAntonioAutos.Core.WebParsers.pdb
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\bin\Debug\SanAntonioAutos.Core.WebParsers.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\bin\Debug\HtmlAgilityPack.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\bin\Debug\SanAntonioAutos.Core.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\bin\Debug\SanAntonioAutos.Core.pdb
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\bin\Debug\SanAntonioAutos.Core.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\bin\Debug\HtmlAgilityPack.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\obj\Debug\SAAutos.Core.WebParsers.Resources.resources
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\obj\Debug\SanAntonioAutos.Core.WebParsers.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\obj\Debug\SanAntonioAutos.Core.WebParsers.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.Core.WebParsers\obj\Debug\SanAntonioAutos.Core.WebParsers.pdb

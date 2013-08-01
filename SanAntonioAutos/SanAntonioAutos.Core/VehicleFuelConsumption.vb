@@ -13,15 +13,21 @@ Public Class VehicleFuelConsumption
 
 #Region "Properties"
 #Region "Class Properties"
-    Private Shared ReadOnly Property UsGallonsPerImperialGallon As Decimal
-        Get
-            Return 1.200950D
-        End Get
-    End Property
-
     Private Shared ReadOnly Property ImperialGallonsPerUsGallon As Decimal
         Get
             Return 0.832674D
+        End Get
+    End Property
+
+    Private Shared ReadOnly Property MaxDecimalPrecision As Integer
+        Get
+            Return 2
+        End Get
+    End Property
+
+    Private Shared ReadOnly Property UsGallonsPerImperialGallon As Decimal
+        Get
+            Return 1.200950D
         End Get
     End Property
 #End Region
@@ -32,7 +38,7 @@ Public Class VehicleFuelConsumption
             Return Me._CityRating
         End Get
         Friend Set(ByVal value As Decimal)
-            Me._CityRating = value
+            Me._CityRating = Math.Round(value, VehicleFuelConsumption.MaxDecimalPrecision)
         End Set
     End Property
 
@@ -51,7 +57,7 @@ Public Class VehicleFuelConsumption
             Return Me._HighwayRating
         End Get
         Friend Set(ByVal value As Decimal)
-            Me._HighwayRating = value
+            Me._HighwayRating = Math.Round(value, VehicleFuelConsumption.MaxDecimalPrecision)
         End Set
     End Property
 #End Region
@@ -70,9 +76,7 @@ Public Class VehicleFuelConsumption
 #Region "Public Methods"
 #Region "Initialization / Cleanup"
     Public Sub New()
-        Me._CityRating = 0D
-        Me._HighwayRating = 0D
-        Me._ConsumptionUnit = VehicleFuelConsumptionUnit.MilesPerGallon_USGallons
+        Me.New(0D, 0D, VehicleFuelConsumptionUnit.MilesPerGallon_USGallons)
     End Sub
 
     Public Sub New(ByVal copy As VehicleFuelConsumption)
@@ -111,7 +115,7 @@ Public Class VehicleFuelConsumption
 #End Region
 
 #Region "Private Methods"
-    Friend Sub ConvertRatingsToNewUnit(ByVal fromUnit As VehicleFuelConsumptionUnit, ByVal toUnit As VehicleFuelConsumptionUnit)
+    Private Sub ConvertRatingsToNewUnit(ByVal fromUnit As VehicleFuelConsumptionUnit, ByVal toUnit As VehicleFuelConsumptionUnit)
         Select Case fromUnit
             Case VehicleFuelConsumptionUnit.MilesPerGallon_ImperialGallons
                 Select Case toUnit
@@ -229,57 +233,57 @@ Public Class VehicleFuelConsumption
 
 #Region "Converter Methods"
 #Region "MPG Imperial To Other Unit"
-    Friend Shared Function Convert_MPGImperial_To_MPGUS(ByVal value As Decimal) As Decimal
-        Return value * VehicleFuelConsumption.ImperialGallonsPerUsGallon
+    Private Shared Function Convert_MPGImperial_To_MPGUS(ByVal value As Decimal) As Decimal
+        Return Math.Round(value * VehicleFuelConsumption.ImperialGallonsPerUsGallon, VehicleFuelConsumption.MaxDecimalPrecision)
     End Function
 
-    Friend Shared Function Convert_MPGImperial_To_KmPerLiter(ByVal value As Decimal) As Decimal
+    Private Shared Function Convert_MPGImperial_To_KmPerLiter(ByVal value As Decimal) As Decimal
         Throw New NotImplementedException("Convert_MPGImperial_To_KmPerLiter Not Implemented")
     End Function
 
-    Friend Shared Function Convert_MPGImperial_To_LiterPer100Km(ByVal value As Decimal) As Decimal
+    Private Shared Function Convert_MPGImperial_To_LiterPer100Km(ByVal value As Decimal) As Decimal
         Throw New NotImplementedException("Convert_MPGImperial_To_LiterPer100Km Not Implemented")
     End Function
 #End Region
 
 #Region "MPG US To Other Unit"
-    Friend Shared Function Convert_MPGUS_To_MPGImperial(ByVal value As Decimal) As Decimal
-        Return value * VehicleFuelConsumption.UsGallonsPerImperialGallon
+    Private Shared Function Convert_MPGUS_To_MPGImperial(ByVal value As Decimal) As Decimal
+        Return Math.Round(value * VehicleFuelConsumption.UsGallonsPerImperialGallon, VehicleFuelConsumption.MaxDecimalPrecision)
     End Function
 
-    Friend Shared Function Convert_MPGUS_To_KmPerLiter(ByVal value As Decimal) As Decimal
+    Private Shared Function Convert_MPGUS_To_KmPerLiter(ByVal value As Decimal) As Decimal
         Throw New NotImplementedException("Convert_MPGUS_To_KmPerLiter Not Implemented")
     End Function
 
-    Friend Shared Function Convert_MPGUS_To_LiterPer100Km(ByVal value As Decimal) As Decimal
+    Private Shared Function Convert_MPGUS_To_LiterPer100Km(ByVal value As Decimal) As Decimal
         Throw New NotImplementedException("Convert_MPGUS_To_LiterPer100Km Not Implemented")
     End Function
 #End Region
 
 #Region "Km/L To Other Unit"
-    Friend Shared Function Convert_KmPerLiter_To_MPGImperial(ByVal value As Decimal) As Decimal
+    Private Shared Function Convert_KmPerLiter_To_MPGImperial(ByVal value As Decimal) As Decimal
         Throw New NotImplementedException("Convert_KmPerLiter_To_MPGImperial Not Implemented")
     End Function
 
-    Friend Shared Function Convert_KmPerLiter_To_MPGUS(ByVal value As Decimal) As Decimal
+    Private Shared Function Convert_KmPerLiter_To_MPGUS(ByVal value As Decimal) As Decimal
         Throw New NotImplementedException("Convert_KmPerLiter_To_MPGUS Not Implemented")
     End Function
 
-    Friend Shared Function Convert_KmPerLiter_To_LiterPer100Km(ByVal value As Decimal) As Decimal
+    Private Shared Function Convert_KmPerLiter_To_LiterPer100Km(ByVal value As Decimal) As Decimal
         Throw New NotImplementedException("Convert_KmPerLiter_To_LiterPer100Km Not Implemented")
     End Function
 #End Region
 
 #Region "L/100Km To Other Unit"
-    Friend Shared Function Convert_LiterPer100Km_To_MPGImperial(ByVal value As Decimal) As Decimal
+    Private Shared Function Convert_LiterPer100Km_To_MPGImperial(ByVal value As Decimal) As Decimal
         Throw New NotImplementedException("Convert_LiterPer100Km_To_MPGImperial Not Implemented")
     End Function
 
-    Friend Shared Function Convert_LiterPer100Km_To_MPGUS(ByVal value As Decimal) As Decimal
+    Private Shared Function Convert_LiterPer100Km_To_MPGUS(ByVal value As Decimal) As Decimal
         Throw New NotImplementedException("Convert_LiterPer100Km_To_MPGUS Not Implemented")
     End Function
 
-    Friend Shared Function Convert_LiterPer100Km_To_KmPerLiter(ByVal value As Decimal) As Decimal
+    Private Shared Function Convert_LiterPer100Km_To_KmPerLiter(ByVal value As Decimal) As Decimal
         Throw New NotImplementedException("Convert_LiterPer100Km_To_KmPerLiter Not Implemented")
     End Function
 #End Region

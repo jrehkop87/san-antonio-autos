@@ -64,9 +64,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DealerListing.vb" />
     <Compile Include="Enumerations\VehicleBodyStyle.vb" />
+    <Compile Include="Enumerations\VehicleEngineConfiguration.vb" />
+    <Compile Include="Enumerations\VehicleEngineDisplacementUnit.vb" />
     <Compile Include="Enumerations\VehicleFuelConsumptionUnit.vb" />
-    <Compile Include="Enumerations\VehicleFuelType.vb" />
+    <Compile Include="Enumerations\VehicleEngineFuelType.vb" />
     <Compile Include="Enumerations\VehicleTransmissionType.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -83,6 +86,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="VehicleEngineInformation.vb" />
     <Compile Include="VehicleFuelConsumption.vb" />
     <Compile Include="VehicleInformation.vb" />
   </ItemGroup>

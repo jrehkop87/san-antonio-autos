@@ -9,6 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{31F175C0
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SanAntonioAutos.Core", "SanAntonioAutos.Core\SanAntonioAutos.Core.vbproj", "{E394A98D-4F74-43EC-9839-860C7E5863F4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Applications", "{C997FA0F-3DF1-4CAE-B630-8B29DA66C788}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SanAntonioAutos.Core.WebParsers", "SanAntonioAutos.Core.WebParsers\SanAntonioAutos.Core.WebParsers.vbproj", "{DE947642-7CA6-4686-B096-AC8E6A7B3352}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SanAntonioAutos.ConsoleApp", "SanAntonioAutos.ConsoleApp\SanAntonioAutos.ConsoleApp.vbproj", "{126343F1-34E4-4775-875B-9857675A74B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +45,26 @@ Global
 		{E394A98D-4F74-43EC-9839-860C7E5863F4}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{E394A98D-4F74-43EC-9839-860C7E5863F4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{E394A98D-4F74-43EC-9839-860C7E5863F4}.Release|x86.ActiveCfg = Release|Any CPU
+		{DE947642-7CA6-4686-B096-AC8E6A7B3352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE947642-7CA6-4686-B096-AC8E6A7B3352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE947642-7CA6-4686-B096-AC8E6A7B3352}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DE947642-7CA6-4686-B096-AC8E6A7B3352}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DE947642-7CA6-4686-B096-AC8E6A7B3352}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DE947642-7CA6-4686-B096-AC8E6A7B3352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE947642-7CA6-4686-B096-AC8E6A7B3352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE947642-7CA6-4686-B096-AC8E6A7B3352}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DE947642-7CA6-4686-B096-AC8E6A7B3352}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DE947642-7CA6-4686-B096-AC8E6A7B3352}.Release|x86.ActiveCfg = Release|Any CPU
+		{126343F1-34E4-4775-875B-9857675A74B7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{126343F1-34E4-4775-875B-9857675A74B7}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{126343F1-34E4-4775-875B-9857675A74B7}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{126343F1-34E4-4775-875B-9857675A74B7}.Debug|x86.ActiveCfg = Debug|x86
+		{126343F1-34E4-4775-875B-9857675A74B7}.Debug|x86.Build.0 = Debug|x86
+		{126343F1-34E4-4775-875B-9857675A74B7}.Release|Any CPU.ActiveCfg = Release|x86
+		{126343F1-34E4-4775-875B-9857675A74B7}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{126343F1-34E4-4775-875B-9857675A74B7}.Release|Mixed Platforms.Build.0 = Release|x86
+		{126343F1-34E4-4775-875B-9857675A74B7}.Release|x86.ActiveCfg = Release|x86
+		{126343F1-34E4-4775-875B-9857675A74B7}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,5 +72,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{45907D23-7EAA-420F-9DBE-19785649D905} = {31F175C0-1FB7-4B64-ADFE-0A6A881524CD}
 		{E394A98D-4F74-43EC-9839-860C7E5863F4} = {F40593FD-CA21-4795-AEDE-DE1F3E068918}
+		{DE947642-7CA6-4686-B096-AC8E6A7B3352} = {F40593FD-CA21-4795-AEDE-DE1F3E068918}
+		{126343F1-34E4-4775-875B-9857675A74B7} = {C997FA0F-3DF1-4CAE-B630-8B29DA66C788}
 	EndGlobalSection
 EndGlobal
