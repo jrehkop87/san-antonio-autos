@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\jeremy_r\Desktop\SAAutoFinder" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="08/06/2013 13:42:44" />
+    <file relUrl="bin/SanAntonioAutos.WebApp.dll" publishTime="08/06/2013 13:34:41" />
+    <file relUrl="Styles/Master.css" publishTime="08/06/2013 13:34:56" />
+    <file relUrl="SAAutos.Master" publishTime="08/06/2013 13:42:02" />
+    <file relUrl="Media/Images/Slogan_Large.png" publishTime="08/06/2013 12:43:54" />
+    <file relUrl="Home.aspx" publishTime="08/06/2013 13:16:03" />
+    <file relUrl="Scripts/Libraries/JQuery-1.10.2.js" publishTime="08/06/2013 12:50:13" />
+    <file relUrl="Styles/SAAutos.css" publishTime="08/06/2013 13:33:32" />
+    <file relUrl="Media/Images/Logo_Large.png" publishTime="08/06/2013 12:44:12" />
+    <file relUrl="Global.asax" publishTime="08/06/2013 13:16:30" />
+    <file relUrl="Scripts/Libraries/JQuery-1.10.2.min.js" publishTime="08/06/2013 12:49:36" />
+    <file relUrl="bin/SanAntonioAutos.WebApp.pdb" publishTime="08/06/2013 13:34:41" />
+    <file relUrl="bin/SanAntonioAutos.WebApp.xml" publishTime="08/06/2013 13:34:41" />
+  </publishProfile>
+</publishData>

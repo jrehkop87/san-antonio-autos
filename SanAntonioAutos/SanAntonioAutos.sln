@@ -15,6 +15,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SanAntonioAutos.Core.WebPar
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SanAntonioAutos.ConsoleApp", "SanAntonioAutos.ConsoleApp\SanAntonioAutos.ConsoleApp.vbproj", "{126343F1-34E4-4775-875B-9857675A74B7}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SanAntonioAutos.WebApp", "SanAntonioAutos.WebApp\SanAntonioAutos.WebApp.vbproj", "{4C97B89F-2C15-4E23-8FDE-4CACA6074F28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,16 @@ Global
 		{126343F1-34E4-4775-875B-9857675A74B7}.Release|Mixed Platforms.Build.0 = Release|x86
 		{126343F1-34E4-4775-875B-9857675A74B7}.Release|x86.ActiveCfg = Release|x86
 		{126343F1-34E4-4775-875B-9857675A74B7}.Release|x86.Build.0 = Release|x86
+		{4C97B89F-2C15-4E23-8FDE-4CACA6074F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C97B89F-2C15-4E23-8FDE-4CACA6074F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C97B89F-2C15-4E23-8FDE-4CACA6074F28}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4C97B89F-2C15-4E23-8FDE-4CACA6074F28}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4C97B89F-2C15-4E23-8FDE-4CACA6074F28}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4C97B89F-2C15-4E23-8FDE-4CACA6074F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C97B89F-2C15-4E23-8FDE-4CACA6074F28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C97B89F-2C15-4E23-8FDE-4CACA6074F28}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4C97B89F-2C15-4E23-8FDE-4CACA6074F28}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4C97B89F-2C15-4E23-8FDE-4CACA6074F28}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,5 +86,6 @@ Global
 		{E394A98D-4F74-43EC-9839-860C7E5863F4} = {F40593FD-CA21-4795-AEDE-DE1F3E068918}
 		{DE947642-7CA6-4686-B096-AC8E6A7B3352} = {F40593FD-CA21-4795-AEDE-DE1F3E068918}
 		{126343F1-34E4-4775-875B-9857675A74B7} = {C997FA0F-3DF1-4CAE-B630-8B29DA66C788}
+		{4C97B89F-2C15-4E23-8FDE-4CACA6074F28} = {C997FA0F-3DF1-4CAE-B630-8B29DA66C788}
 	EndGlobalSection
 EndGlobal

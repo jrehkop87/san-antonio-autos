@@ -1,0 +1,16 @@
+﻿#div_MainPage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+#lnk_CompanyName {
+    color: #000000;
+    font-family: Garamond;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+#spn_CompanySlogan {
+    font-size: 1em;
+}
