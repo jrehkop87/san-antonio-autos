@@ -6,17 +6,89 @@ SanAntonioAutos.WebApp
 </name>
 </assembly>
 <members>
-<member name="F:SAAutos.WebApp.SAAutosMasterPage.frm_SAAutosForm">
+<member name="F:SAAutos.WebApp.VehicleInfoDisplay.spn_Heading">
 	<summary>
-frm_SAAutosForm control.
+spn_Heading control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:SAAutos.WebApp.SAAutosMasterPage.cph_MainPageContent">
+</member><member name="F:SAAutos.WebApp.VehicleInfoDisplay.img_Thumbnail">
 	<summary>
-cph_MainPageContent control.
+img_Thumbnail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SAAutos.WebApp.VehicleInfoDisplay.spn_Engine">
+	<summary>
+spn_Engine control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SAAutos.WebApp.VehicleInfoDisplay.spn_Trans">
+	<summary>
+spn_Trans control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SAAutos.WebApp.VehicleInfoDisplay.spn_Mileage">
+	<summary>
+spn_Mileage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SAAutos.WebApp.VehicleInfoDisplay.spn_ExtColor">
+	<summary>
+spn_ExtColor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SAAutos.WebApp.VehicleInfoDisplay.spn_IntColor">
+	<summary>
+spn_IntColor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SAAutos.WebApp.VehicleInfoDisplay.spn_VIN">
+	<summary>
+spn_VIN control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SAAutos.WebApp.VehicleInfoDisplay.spn_Price">
+	<summary>
+spn_Price control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SAAutos.WebApp.VehicleInfoDisplay.spn_CityEconomy">
+	<summary>
+spn_CityEconomy control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SAAutos.WebApp.VehicleInfoDisplay.spn_HwyEconomy">
+	<summary>
+spn_HwyEconomy control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -68,6 +140,30 @@ To modify move field declaration from designer file to code-behind file.
  Module used to define the properties that are available in the My Namespace for Web projects.
  </summary>
 	<remarks></remarks>
+</member><member name="F:SAAutos.WebApp.SAAutosMasterPage.frm_SAAutosForm">
+	<summary>
+frm_SAAutosForm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SAAutos.WebApp.SAAutosMasterPage.cph_MainPageContent">
+	<summary>
+cph_MainPageContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:SAAutos.WebApp.Home.pnl_VehicleList">
+	<summary>
+pnl_VehicleList control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member>
 </members>
 </doc>

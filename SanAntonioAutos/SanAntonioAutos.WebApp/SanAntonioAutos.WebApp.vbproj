@@ -86,13 +86,12 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Controls\VehicleInfo.ascx" />
+    <Content Include="Controls\VehicleInfoDisplay.ascx" />
     <Content Include="Home.aspx" />
     <Content Include="Media\Images\Fuel_Pump.png" />
     <Content Include="Media\Images\Logo_Large.png" />
     <Content Include="Media\Images\Slogan_Large.png" />
     <Content Include="Media\Images\TestCarImg.jpg" />
-    <Content Include="Styles\Master.css" />
     <Content Include="Styles\SAAutos.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\Libraries\JQuery-1.10.2.min.js" />
@@ -105,11 +104,11 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\VehicleInfo.ascx.designer.vb">
-      <DependentUpon>VehicleInfo.ascx</DependentUpon>
+    <Compile Include="Controls\VehicleInfoDisplay.ascx.designer.vb">
+      <DependentUpon>VehicleInfoDisplay.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Controls\VehicleInfo.ascx.vb">
-      <DependentUpon>VehicleInfo.ascx</DependentUpon>
+    <Compile Include="Controls\VehicleInfoDisplay.ascx.vb">
+      <DependentUpon>VehicleInfoDisplay.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">
@@ -172,6 +171,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SanAntonioAutos.Core.WebParsers\SanAntonioAutos.Core.WebParsers.vbproj">
+      <Project>{DE947642-7CA6-4686-B096-AC8E6A7B3352}</Project>
+      <Name>SanAntonioAutos.Core.WebParsers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SanAntonioAutos.Core\SanAntonioAutos.Core.vbproj">
+      <Project>{E394A98D-4F74-43EC-9839-860C7E5863F4}</Project>
+      <Name>SanAntonioAutos.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

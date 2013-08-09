@@ -11,6 +11,7 @@ Public Class VehicleInformation
     Private _FuelConsumption As VehicleFuelConsumption
     Private _InteriorColor As String
     Private _Make As String
+    Private _Mileage As Decimal
     Private _Model As String
     Private _TransmissionType As VehicleTransmissionType
     Private _VIN As String
@@ -72,6 +73,15 @@ Public Class VehicleInformation
         End Set
     End Property
 
+    Public Property Mileage As Decimal
+        Get
+            Return Me._Mileage
+        End Get
+        Friend Set(ByVal value As Decimal)
+            Me._Mileage = value
+        End Set
+    End Property
+
     Public Property Model As String
         Get
             Return Me._Model
@@ -122,6 +132,7 @@ Public Class VehicleInformation
         Me.FuelConsumption = copy.FuelConsumption
         Me.InteriorColor = copy.InteriorColor
         Me.Make = copy.Make
+        Me.Mileage = copy.Mileage
         Me.Model = copy.Model
         Me.TransmissionType = copy.TransmissionType
         Me.VIN = copy.VIN

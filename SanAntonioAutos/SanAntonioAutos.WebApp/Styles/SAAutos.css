@@ -1,10 +1,74 @@
-﻿/* DEFAULTS
-----------------------------------------------------------*/
-
+﻿/******************************************************************************
+ * Default Styles
+ *****************************************************************************/
 body {
     background: #b6b7bc;
     font-family: Garamond;
     margin: 0px;
     padding: 0px;
     color: #000000;
+}
+
+/******************************************************************************
+ * Master Page Styles
+ *****************************************************************************/
+#div_MainPage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+
+#lnk_CompanyName {
+    color: #000000;
+    font-family: Garamond;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+#spn_CompanySlogan {
+    font-size: 1em;
+}
+
+/******************************************************************************
+ * VehicleInfoDisplay Control Styles
+ *****************************************************************************/
+.vid_Container {
+    height: 224px;
+    width: 800px;
+}
+
+.vid_Heading {
+    padding-bottom: 6px;
+    width: 100%;
+}
+
+.vid_HeadingText {
+    font-size: 1.5em;
+}
+
+.vid_ThumbnailContainer {
+    max-width: 240px;
+    width: 240px;
+}
+
+.vid_Thumbnail {
+    width: 100%;
+}
+
+.vid_SpecsContainer {
+    height: 180px;
+    left: 252px;
+    position: relative;
+    top: -180px;
+    width: 296px;
+}
+
+.vid_SpecsEntry {
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.vid_SpecsEntryName {
+    font-weight: bold;
+    padding-right: 6px;   
 }

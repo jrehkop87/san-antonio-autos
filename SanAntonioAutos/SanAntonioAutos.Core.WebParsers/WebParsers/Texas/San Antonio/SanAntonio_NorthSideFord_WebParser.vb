@@ -11,6 +11,12 @@ Public Class SanAntonio_NorthSideFord_WebParser
 
 #Region "Properties"
 #Region "Class Properties"
+    Private Shared ReadOnly Property BaseUrl As String
+        Get
+            Return "http://nsford.com"
+        End Get
+    End Property
+
     Private Shared ReadOnly Property UrlFormat As String
         Get
             Return "http://nsford.com/San-Antonio/For-Sale/Used/?PageSize=100&Page={0}"
@@ -47,9 +53,19 @@ Public Class SanAntonio_NorthSideFord_WebParser
                 Dim pageInventoryNodes As HtmlNodeCollection = Me.SelectInventoryNodes(currentPage)
 
                 For Each inventoryNode As HtmlNode In pageInventoryNodes
-                    Dim nodeVehicleInformation As VehicleInformation = Me.BuildVehicleInformationFromInventoryNode(inventoryNode)
+                    Dim vehicleDetailPage As HtmlDocument = Me.DownloadVehicleDetailPage(inventoryNode)
+
+                    Dim nodeVehicleInformation As VehicleInformation = Me.BuildVehicleInformation(inventoryNode, vehicleDetailPage)
+                    Dim nodeVehicleDetailUrl As String = SanAntonio_NorthSideFord_WebParser.BaseUrl & inventoryNode.SelectSingleNode(".//span[@class='view-details-link']/a").Attributes("href").Value
                     Dim nodeVehiclePrice As Decimal = Me.ExtractAskingPriceFromInventoryNode(inventoryNode)
-                    dealerInventory.Add(New DealerListing(nodeVehicleInformation, nodeVehiclePrice))
+
+                    Dim nodeVehicleThumbnailUrl As String = String.Empty
+                    Dim nodeVehicleThumbnailNode As HtmlNode = vehicleDetailPage.DocumentNode.SelectSingleNode("//a[@class='vehicle-thumbnails without-video']")
+                    If nodeVehicleThumbnailNode IsNot Nothing
+                        nodeVehicleThumbnailUrl = nodeVehicleThumbnailNode.Attributes("href").Value
+                    End If
+
+                    dealerInventory.Add(New DealerListing(nodeVehicleInformation, nodeVehiclePrice, nodeVehicleDetailUrl, nodeVehicleThumbnailUrl))
                 Next
 
                 If pageIndex < pageCount
@@ -66,19 +82,20 @@ Public Class SanAntonio_NorthSideFord_WebParser
 #End Region
 
 #Region "Private Methods"
-    Private Function BuildVehicleInformationFromInventoryNode(ByVal node As HtmlNode) As VehicleInformation
+    Private Function BuildVehicleInformation(ByVal inventoryNode As HtmlNode, ByVal detailPage As HtmlDocument) As VehicleInformation
         Dim nodeVehicleInformation As New VehicleInformation()
 
-        nodeVehicleInformation.BodyStyle = Me.ExtractBodyStyleFromInventoryNode(node)
-        nodeVehicleInformation.Engine = Me.ExtractEngineInformationFromInventoryNode(node)
-        nodeVehicleInformation.ExteriorColor = node.SelectSingleNode(".//dd[@class='ext. color']").InnerText
-        nodeVehicleInformation.FuelConsumption = Me.ExtractFuelConsumptionRatingFromInventoryNode(node)
-        nodeVehicleInformation.InteriorColor = node.SelectSingleNode(".//dd[@class='int. color']").InnerText
-        nodeVehicleInformation.Make = node.SelectSingleNode(".//input[@class='vehicle-make']").GetAttributeValue("value", String.Empty)
-        nodeVehicleInformation.Model = node.SelectSingleNode(".//input[@class='vehicle-model']").GetAttributeValue("value", String.Empty)
-        nodeVehicleInformation.TransmissionType = Me.ExtractTransmissionTypeFromInventoryNode(node)
-        nodeVehicleInformation.VIN = node.SelectSingleNode(".//dd[@class='vin #']").InnerText
-        nodeVehicleInformation.Year = CInt(node.SelectSingleNode(".//input[@class='vehicle-year']").GetAttributeValue("value", String.Empty))
+        nodeVehicleInformation.BodyStyle = Me.ExtractBodyStyleFromInventoryNode(inventoryNode)
+        nodeVehicleInformation.Engine = Me.ExtractEngineInformationFromInventoryNode(inventoryNode)
+        nodeVehicleInformation.ExteriorColor = inventoryNode.SelectSingleNode(".//dd[@class='ext. color']").InnerText
+        nodeVehicleInformation.FuelConsumption = Me.ExtractFuelConsumptionRatingFromInventoryNode(inventoryNode)
+        nodeVehicleInformation.InteriorColor = inventoryNode.SelectSingleNode(".//dd[@class='int. color']").InnerText
+        nodeVehicleInformation.Make = inventoryNode.SelectSingleNode(".//input[@class='vehicle-make']").GetAttributeValue("value", String.Empty)
+        nodeVehicleInformation.Mileage = Me.ExtractVehicleMileageFromVehicleDetailPage(detailPage)
+        nodeVehicleInformation.Model = inventoryNode.SelectSingleNode(".//input[@class='vehicle-model']").GetAttributeValue("value", String.Empty)
+        nodeVehicleInformation.TransmissionType = Me.ExtractTransmissionTypeFromInventoryNode(inventoryNode)
+        nodeVehicleInformation.VIN = inventoryNode.SelectSingleNode(".//dd[@class='vin #']").InnerText
+        nodeVehicleInformation.Year = CInt(inventoryNode.SelectSingleNode(".//input[@class='vehicle-year']").GetAttributeValue("value", String.Empty))
 
         Return nodeVehicleInformation
     End Function
@@ -91,6 +108,16 @@ Public Class SanAntonio_NorthSideFord_WebParser
         page.LoadHtml(pageXmlString)
 
         Return page
+    End Function
+
+    Private Function DownloadVehicleDetailPage(ByVal inventoryNode As HtmlNode) As HtmlDocument
+        Dim nodeVehicleDetailUrl As String = SanAntonio_NorthSideFord_WebParser.BaseUrl & inventoryNode.SelectSingleNode(".//span[@class='view-details-link']/a").Attributes("href").Value
+        Dim nodeVehicleDetailPageXmlString As String = Me.WebClient.DownloadString(nodeVehicleDetailUrl)
+
+        Dim nodeVehicleDetailPage As New HtmlDocument()
+        nodeVehicleDetailPage.LoadHtml(nodeVehicleDetailPageXmlString)
+
+        Return nodeVehicleDetailPage
     End Function
 
     Private Function ExtractAskingPriceFromInventoryNode(ByVal node As HtmlNode) As Decimal
@@ -234,6 +261,20 @@ Public Class SanAntonio_NorthSideFord_WebParser
         End Select
 
         Return transmissionType
+    End Function
+
+    Private Function ExtractVehicleMileageFromVehicleDetailPage(ByVal detailPage As HtmlDocument) As Decimal
+        Dim vehicleMileage As Decimal = -1D
+
+        Dim vehicleDetailNodes As HtmlNodeCollection = detailPage.DocumentNode.SelectNodes("//div[@class='section-row vehicle-heading-details']/span")
+        For Each vehicleDetailNode As HtmlNode In vehicleDetailNodes
+            If vehicleDetailNode.InnerText.Contains("Miles:")
+                vehicleMileage = CDec(Regex.Match(vehicleDetailNode.InnerText, "[\d]+[,]*[\d]*").Value)
+                Exit For
+            End If
+        Next
+
+        Return vehicleMileage
     End Function
 
     Private Function GetPageCount(ByVal document As HtmlDocument) As Integer

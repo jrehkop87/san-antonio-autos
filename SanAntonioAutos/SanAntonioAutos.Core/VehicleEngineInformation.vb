@@ -127,6 +127,33 @@ Public Class VehicleEngineInformation
             Me.FuelType.ToString()
         ).GetHashCode()
     End Function
+
+    Public Overrides Function ToString() As String
+        Dim fuelTypeString As String = String.Empty
+        Select Case Me.FuelType
+            Case VehicleEngineFuelType.Diesel
+                fuelTypeString = "Diesel"
+
+            Case VehicleEngineFuelType.Gasoline
+                fuelTypeString = "Gas"
+
+            Case VehicleEngineFuelType.Unknown
+                fuelTypeString = "Unknown"
+        End Select
+
+        Dim arrangementString As String = String.Format("V{0}", Me.CylinderCount)
+
+        Dim displacementString As String = String.Empty
+        Select Case Me.DisplacementUnit
+            Case VehicleEngineDisplacementUnit.CubicInches
+                displacementString = String.Format("{0} {1}", Math.Round(Me.Displacement).ToString(), "cubic inches")
+
+            Case VehicleEngineDisplacementUnit.Liters
+                displacementString = String.Format("{0}L", Me.Displacement.ToString("0.0"))
+        End Select
+
+        Return String.Format("{0} {1} {2}", fuelTypeString, arrangementString, displacementString)
+    End Function
 #End Region
 #End Region
 

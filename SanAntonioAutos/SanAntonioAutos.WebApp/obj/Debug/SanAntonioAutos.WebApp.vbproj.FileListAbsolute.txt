@@ -1,6 +1,15 @@
 C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\bin\SanAntonioAutos.WebApp.dll
 C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\bin\SanAntonioAutos.WebApp.pdb
 C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\bin\SanAntonioAutos.WebApp.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\bin\SanAntonioAutos.Core.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\bin\SanAntonioAutos.Core.WebParsers.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\bin\HtmlAgilityPack.dll
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\bin\SanAntonioAutos.Core.WebParsers.pdb
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\bin\SanAntonioAutos.Core.WebParsers.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\bin\SanAntonioAutos.Core.pdb
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\bin\SanAntonioAutos.Core.xml
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\bin\HtmlAgilityPack.pdb
+C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\bin\HtmlAgilityPack.xml
 C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\obj\Debug\SAAutos.WebApp.Resources.resources
 C:\Users\jeremy_r\Documents\san-antonio-autos\SanAntonioAutos\SanAntonioAutos.WebApp\obj\Debug\GenerateResource.read.1.tlog
